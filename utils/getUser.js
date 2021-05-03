@@ -13,7 +13,10 @@ const getUser = async (userName) => {
     'erlonlon/t',
     'erlonlon/teste01',
     'erlonlon/jocelio',
-    'erlonlon/cv'
+    'erlonlon/cv',
+    'erlonlon/umdigito',
+    'erlonlon/eboxbrasil',
+    'erlonlon/xote7'
   ]
   const dontShowFilter = repo => dontShowRepos.indexOf(repo.full_name) === -1
   const extractRepos = repo => ({
