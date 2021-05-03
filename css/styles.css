@@ -1,3 +1,22 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+body{
+  background: #F3F4FB url(/images/fundo.png) top center no-repeat;
+
+}
+.bg-body{
+  background: #F3F4FB;
+
+}
+
+
+@responsive {
+  .bg-network-left{
+    background: url(/images/fundo.png) top left no-repeat;
+  }
+  .bg-network-right{
+    background: url(/images/erlon.png) top right no-repeat;
+  }
+}
