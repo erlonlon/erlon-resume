@@ -6,7 +6,7 @@ const Index = ({ repos, user }) => {
   return (
     <>
 
-      <div className="container mx-auto">
+      <div className="bg-body container mx-auto">
         <div class="grid grid-cols-2 pt-16 leading-none" >
           <div className='m-8 pl-44'>
             <img className='rounded-full h-96 w-96 flex items-center justify-center' src='images/lonlon.png' />
