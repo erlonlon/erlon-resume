@@ -6,9 +6,9 @@ const Index = ({ repos, user }) => {
   return (
     <>
 
-      <div className="bg-body container mx-auto">
+      <div className="bg-body md:container md:mx-auto">
 
-        <div class="grid grid-flow-col md:grid-flow-col">
+        <div className="grid grid-flow-col md:grid-flow-col">
           <div className='m-8 pl-44'>
             <img className='rounded-full h-80 w-80 box-border border-8 border-gray-700 flex items-center justify-center' src='images/lonlon.png' />
           </div>
@@ -25,7 +25,7 @@ const Index = ({ repos, user }) => {
 
         <div class="grid grid-flow-col md:grid-flow-col">
 
-          <div className='m-8 pl-44  uppercase font-bold '>
+          <div className='m-8 uppercase font-bold '>
             <h1 className='text-5xl'>Stake</h1>
 
             <h1 className='text-left text-4xl  py-4 w-11/12'>
@@ -50,7 +50,7 @@ const Index = ({ repos, user }) => {
 
         </div>
         <div class="grid grid-flow-col md:grid-flow-col">
-          <div className='px-16'>
+          <div className=''>
             {repos.map(repo => {
               return (
                 <div key={repo.id} className='rounded bg-gray-200 mx-8 my-4 p-4 hover:shadow-md'>
