@@ -7,9 +7,10 @@ const Index = ({ repos, user }) => {
     <>
 
       <div className="bg-body container mx-auto">
-        <div class="grid grid-cols-2 pt-16 leading-none" >
+
+        <div class="grid grid-flow-col md:grid-flow-col">
           <div className='m-8 pl-44'>
-            <img className='rounded-full h-96 w-96 flex items-center justify-center' src='images/lonlon.png' />
+            <img className='rounded-full h-80 w-80 box-border border-8 border-gray-700 flex items-center justify-center' src='images/lonlon.png' />
           </div>
           <div className=' pt-20 m-12'>
             <h1 className='text-7xl uppercase' >Erlon Carlos</h1>
@@ -21,9 +22,10 @@ const Index = ({ repos, user }) => {
             <p>Git stats: public repos: {user.public_repos} / public_gists: {user.public_gists} / followers: {user.followers}</p>
           </div>
         </div>
-        <div className='grid grid-cols-2 pt-16 leading-none'>
 
-          <div className='m-16 pl-40  uppercase font-bold '>
+        <div class="grid grid-flow-col md:grid-flow-col">
+
+          <div className='m-8 pl-44  uppercase font-bold '>
             <h1 className='text-5xl'>Stake</h1>
 
             <h1 className='text-left text-4xl  py-4 w-11/12'>
@@ -45,6 +47,9 @@ const Index = ({ repos, user }) => {
           </div>
 
 
+
+        </div>
+        <div class="grid grid-flow-col md:grid-flow-col">
           <div className='px-16'>
             {repos.map(repo => {
               return (
@@ -56,6 +61,8 @@ const Index = ({ repos, user }) => {
             })}
           </div>
         </div>
+
+
 
 
       </div>
