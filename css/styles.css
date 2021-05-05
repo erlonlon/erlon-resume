@@ -3,12 +3,11 @@
 @import "tailwindcss/utilities";
 
 body{
-  background: #F8F8F8 ;
-
+  background: #F8F8F8 url(/images/fundo-02.png) top left repeat-x  ;
 }
 
 .bg-body{
-  background: #F8F8F8 url(/images/fundo-02.png) top right no-repeat;
+  background: #F8F8F8 url(/images/fundo-02.png) top right no-repeat  ;
 
 }
 
