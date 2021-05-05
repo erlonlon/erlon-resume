@@ -12,7 +12,7 @@ const Index = ({ repos, user }) => {
           <div className='m-8 pl-32 pt-24 '>
             <img className='rounded-full h-80 w-80 box-border border-8 border-gray-300 flex items-center justify-center' src='images/lonlon.png' />
           </div>
-          <div className=' pt-28 m-12'>
+          <div className=' pt-24 m-12'>
             <h1 className='font-bold text-7xl uppercase py-2' >Erlon Carlos</h1>
             <h1 className='text-4xl uppercase py-2'>FullStack Developer</h1>
             <h3>Contatos</h3>
@@ -24,18 +24,32 @@ const Index = ({ repos, user }) => {
         </div>
 
 
-        <div className="grid grid-flow-col md:grid-flow-col leading-none">
+        <div className="grid grid-flow-col md:grid-flow-col leading-none pt-24">
           <div className='bg-white rounded-lg shadow-lg py-12 px-16 '>
             <h3 className='text-4xl uppercase text-center'>Competências</h3>
             <p className='text-3xl'>Fullstack Developer</p>
 
           </div>
+        </div>
+        <div className="grid grid-flow-col md:grid-flow-col leading-none">
+          <h3 className='text-4xl uppercase text-center py-12 text-green-300'>
+            Meus Estudos
+            </h3>
+        </div>
 
+        <div className="py-12 grid grid-flow-col md:grid-flow-col leading-none bg-white rounded-lg shadow-lg">
 
+          {[1, 2].map(i => (
+            <div className='border-dotted border-l-4 border-light-blue-500 px-16 '>
+              <h4 className='uppercase font-bold text-lg mb-1'>Mater</h4>
+              <p className='text-2x1 uppercase mb-1'>Computar</p>
+              <span className='text-lg normal-case font-bold mb-1'>Unisul</span>
 
-
+            </div>
+          ))}
 
         </div>
+
         <div class="grid grid-flow-col md:grid-flow-col">
           <div className=''>
             {repos.map(repo => {
