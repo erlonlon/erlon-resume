@@ -3,9 +3,10 @@
 @import "tailwindcss/utilities";
 
 body{
-  background: url(/images/fundo-05.png) top right no-repeat ;
+  background: #fff url(/images/fundo-05.png) top right no-repeat ;
   
 }
+
 @responsive {
   .bg-network-left{
     background: url(/images/lonlon.png) top left no-repeat;
