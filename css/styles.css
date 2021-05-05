@@ -15,9 +15,9 @@ body{
 
 @responsive {
   .bg-network-left{
-    background: url(/images/erlon.png) top left no-repeat;
+    background: url(/images/lonlon.png) top left no-repeat;
   }
   .bg-network-right{
-    background: url(/images/fundo.png) top right no-repeat;
+    background: url(/images/fundo-02.png) top right no-repeat;
   }
 }

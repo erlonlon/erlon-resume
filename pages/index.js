@@ -9,10 +9,10 @@ const Index = ({ repos, user }) => {
       <div className="bg-body md:container md:mx-auto">
 
         <div className="grid grid-flow-col md:grid-flow-col">
-          <div className='m-8 pl-44'>
-            <img className='rounded-full h-80 w-80 box-border border-8 border-gray-700 flex items-center justify-center' src='images/lonlon.png' />
+          <div className='m-8 pl-44 pt-24 '>
+            <img className='rounded-full h-80 w-80 box-border border-8 border-gray-300 flex items-center justify-center' src='images/lonlon.png' />
           </div>
-          <div className=' pt-20 m-12'>
+          <div className=' pt-28 m-12'>
             <h1 className='text-7xl uppercase' >Erlon Carlos</h1>
             <h1 className='font-bold text-6x1 uppercase'>Meus Repositórios- Erlon</h1>
             <h3>Contatos</h3>
