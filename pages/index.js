@@ -1,7 +1,10 @@
 import React from 'react'
 import getUser from '../utils/getUser'
 import { FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa'
-import { FiLink } from 'react-icons/fi'
+import { FiLink, FiInstagram, FiStar } from 'react-icons/fi'
+import { RiGitRepositoryCommitsLine } from 'react-icons/ri'
+import { TiFlowMerge } from 'react-icons/ti'
+import { VscGistSecret } from 'react-icons/vsc'
 
 const Index = ({ repos, user }) => {
 
@@ -23,13 +26,13 @@ const Index = ({ repos, user }) => {
               <p>
                 <FaLinkedin className='py-2 text-6xl inline-block mr-6' />
                 <FaGithub className='py-2 text-6xl inline-block mr-6' />
-                <FaYoutube className='py-2 text-6xl inline-block mr-6' />
+                <FiInstagram className='py-2 text-6xl inline-block mr-6' />
                 <FiLink className='py-2 text-6xl inline-block mr-6' />
                 <br></br>
-                <span className='inline-block pt-2 font-bold text-2xl '>erlon@dev</span>
+                <span className='inline-block pt-2 font-bold text-2xl '>Contato on-line: erlon@dev</span>
               </p>
 
-              <p className='py-2 font-bold text-2xl uppercase'>Git stats: public repos: {user.public_repos} / public_gists: {user.public_gists} / followers: {user.followers}</p>
+
 
             </div>
           </div>
@@ -46,13 +49,13 @@ const Index = ({ repos, user }) => {
         <div className="grid grid-flow-col md:grid-flow-col leading-none">
           <h3 className='text-4xl uppercase text-center py-12 text-green-400'>
             Meus Estudos
-            </h3>
+          </h3>
         </div>
 
         <div className="py-12 grid grid-flow-col md:grid-flow-col leading-none bg-opacity-30 bg-gray-200 rounded-lg shadow-lg">
 
           {[1, 2].map(i => (
-            <div className='border-dotted border-l-4 border-light-blue-500 px-16 '>
+            <div className='border-dotted border-l border-light-blue-500 px-16 '>
               <h4 className='uppercase font-bold text-lg mb-1'>Mater</h4>
               <p className='text-2x1 uppercase mb-1'>Computar</p>
               <span className='text-lg normal-case font-bold mb-1'>Unisul</span>
@@ -62,17 +65,28 @@ const Index = ({ repos, user }) => {
 
         </div>
 
-        <div className="grid grid-flow-col md:grid-flow-col">
-          <div className=''>
-            {repos.map(repo => {
-              return (
-                <div key={repo.id} className='rounded bg-opacity-30 bg-gray-200 mx-8 my-4 p-4 hover:shadow-md'>
-                  <h3 className='font-bold'>{repo.full_name}</h3>
-                  <p>{repo.language} / Stars: {repo.stargazers_count}</p>
-                </div>
-              )
-            })}
-          </div>
+        <h3 className='text-4xl uppercase text-center py-8 text-green-400'>
+          Contribuiçaõ Técnica
+          </h3>
+        <div>
+          <p className='py-2 text-2xl text-center '>
+            Git stats: <FiStar className='text-2xl inline-block mr-4' /> /
+            <RiGitRepositoryCommitsLine className='text-2xl inline-block mr-4' />
+            {user.public_repos} / <VscGistSecret className='text-2xl inline-block mr-4' /> {user.public_gists} / <TiFlowMerge className='text-2xl inline-block mr-4' /> {user.followers}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-3 gap-4">
+
+          {repos.map(repo => {
+            return (
+              <div key={repo.id} className='rounded bg-opacity-30 bg-gray-200 mx-8 my-4 p-4 hover:shadow-md'>
+                <h3 className='font-bold'>{repo.full_name}</h3>
+                <p>{repo.language} / Stars: {repo.stargazers_count}</p>
+              </div>
+            )
+          })}
+
         </div>
 
 
