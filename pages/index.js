@@ -15,8 +15,8 @@ const Index = ({ repos, user }) => {
             <img className='rounded-full h-80 w-80 box-border border-8 border-gray-300 flex items-center justify-center' src='images/lonlon.png' />
           </div>
           <div className=' pt-24 m-12 pl-44'>
-            <h1 className='font-bold text-7xl uppercase py-2' >Erlon Carlos</h1>
-            <h1 className='text-4xl uppercase py-4 '>FullStack Developer</h1>
+            <h1 className='font-bold text-5xl py-2' >Erlon Gomes</h1>
+            <h1 className='text-6xl uppercase py-4 '>FullStack Developer</h1>
 
             <div className='relative border-2 rounded px-16 pb-4 pt-10 mt-6 border-green-400'>
               <h3 className='text-white bg-green-400 absolute py-2 px-6 top-0 -mt-7 text-3xl font-bold uppercase '>Contatos</h3>
