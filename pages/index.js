@@ -81,8 +81,8 @@ const Index = ({ repos, user }) => {
           {repos.map(repo => {
             return (
               <div key={repo.id} className='rounded bg-opacity-30 bg-gray-200 mx-8 my-4 p-4 hover:shadow-md'>
-                <h3 className='font-bold'>{repo.full_name}</h3>
-                <p>{repo.language} / Stars: {repo.stargazers_count}</p>
+                <h3 className='font-bold'><a href={'https://github.com/' + repo.full_name} >{repo.full_name}</a></h3>
+                <p>{repo.language} / Stars: <FiStar className='text-1xl inline-block mr-4' /> {repo.stargazers_count}</p>
               </div>
             )
           })}
