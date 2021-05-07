@@ -1,12 +1,12 @@
 import React from 'react'
-import Head from 'next/head'
 import getUser from '../utils/getUser'
-import { FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa'
-import { FiLink, FiInstagram, FiStar } from 'react-icons/fi'
+
+import { FiStar } from 'react-icons/fi'
 import { RiGitRepositoryCommitsLine } from 'react-icons/ri'
 import { TiFlowMerge } from 'react-icons/ti'
 import { VscGistSecret } from 'react-icons/vsc'
 import PageHead from '../components/PageHead'
+import Hero from '../components/Hero'
 
 const Index = ({ repos, user }) => {
 
@@ -14,53 +14,26 @@ const Index = ({ repos, user }) => {
     <>
       <PageHead />
 
-
-
       <div className="bg-body md:container md:mx-auto  ">
+        <Hero />
 
-        <div className="grid grid-flow-col md:grid-flow-col leading-none">
-          <div className='m-8 pl-32 pt-24 '>
-            <img className='rounded-full h-80 w-80 box-border border-8 border-gray-300 flex items-center justify-center' src='images/lonlon.png' />
-          </div>
-          <div className=' pt-24 m-12 pl-44'>
-            <h1 className='font-bold text-5xl py-2' >Erlon Gomes</h1>
-            <h1 className='text-6xl uppercase py-4 '>FullStack Developer</h1>
-
-            <div className='relative border-2 rounded px-16 pb-4 pt-10 mt-6 border-green-400'>
-              <h3 className='text-white bg-green-400 absolute py-2 px-6 top-0 -mt-7 text-3xl font-bold uppercase '>Contatos</h3>
-              <p>
-                <a href='https://www.linkedin.com/in/erloncarlos/'><FaLinkedin className='py-2 text-6xl inline-block mr-6' /></a>
-                <a href='https://github.com/erlonlon'><FaGithub className='py-2 text-6xl inline-block mr-6' /></a>
-                <a href='https://www.instagram.com/infoautomacao/'> <FiInstagram className='py-2 text-6xl inline-block mr-6' /></a>
-                <FiLink className='py-2 text-6xl inline-block mr-6' />
-                <br></br>
-                <span className='inline-block pt-2 font-bold text-2xl '>Contato on-line: erlon@dev</span>
-              </p>
-
-
-
-            </div>
-          </div>
-        </div>
-
-
-        <div className="grid grid-flow-col md:grid-flow-col leading-none pt-24">
-          <div className='bg-opacity-30 bg-gray-200 rounded-lg shadow-lg py-12 px-16 '>
-            <h3 className='text-4xl uppercase text-center py-12 text-green-400'>Competências</h3>
-            <p className='text-3xl'>Fullstack Developer</p>
-            <p className='text-3xl'>Criação de Sites, Blogs</p>
-            <p className='text-3xl'>Criação de Sistema Web</p>
-            <p className='text-3xl'>Criação de Designer</p>
+        <div className="grid grid-flow-col md:grid-flow-col leading-none md:pt-24">
+          <div className='bg-opacity-30 bg-gray-200 rounded-lg shadow-lg md:py-12 py-8 px-16 '>
+            <h3 className='md:text-4xl text-3xl uppercase text-center md:py-12 text-green-400'>Competências</h3>
+            <p className='md:text-3xl py-2'>Fullstack Developer</p>
+            <p className='md:text-3xl py-2'>Criação de Sites, Blogs</p>
+            <p className='md:text-3xl py-2'>Criação de Sistema Web</p>
+            <p className='md:text-3xl py-2 '>Criação de Designer</p>
 
           </div>
         </div>
         <div className="grid grid-flow-col md:grid-flow-col leading-none">
-          <h3 className='text-4xl uppercase text-center py-12 text-green-400'>
+          <h3 className='md:text-4xl text-3x1 uppercase text-center py-12 text-green-400'>
             Formação Acadêmica
           </h3>
         </div>
 
-        <div className="py-12 grid grid-cols-2 gap-4 leading-none bg-opacity-30 bg-gray-200 rounded-lg shadow-lg">
+        <div className="md:py-12 py-6 grid md:grid-cols-2 md:gap-4 leading-none bg-opacity-30 bg-gray-200 rounded-lg shadow-lg">
 
 
           <div className='border-dotted border-l border-light-blue-500 px-16 '>
@@ -97,18 +70,19 @@ const Index = ({ repos, user }) => {
 
         </div>
 
-        <h3 className='text-4xl uppercase text-center py-8 text-green-400'>
+        <h3 className='md:text-4xl uppercase text-center py-8 text-green-400'>
           Contribuiçaõ Técnica
           </h3>
-        <div>
-          <p className='py-2 text-2xl text-center '>
-            Git stats: <FiStar className='text-2xl inline-block mr-4' /> /
-            <RiGitRepositoryCommitsLine className='text-2xl inline-block mr-4' />
-            {user.public_repos} / <VscGistSecret className='text-2xl inline-block mr-4' /> {user.public_gists} / <TiFlowMerge className='text-2xl inline-block mr-4' /> {user.followers}
+        <div className=''>
+          <p className='md:py-2 md:text-2xl text-center '>
+            Git stats: <FiStar className='md:text-2xl inline-block mr-4' /> /
+            <RiGitRepositoryCommitsLine className='md:text-2xl inline-block mr-4' />
+            {user.public_repos} / <VscGistSecret className='md:text-2xl inline-block mr-4' /> {user.public_gists} /
+            <TiFlowMerge className='md:text-2xl inline-block mr-4' /> {user.followers}
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="md:grid md:grid-cols-3 gap-4">
 
           {repos.map(repo => {
             return (

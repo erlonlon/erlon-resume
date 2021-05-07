@@ -11,7 +11,7 @@ body{
   .bg-network-left{
     background: url(/images/lonlon.png) top left no-repeat;
   }
-  .bg-network-right{
-    background: url(/images/f9.png) top right no-repeat;
+  .bg-network-left{
+    background: url(/images/f9.png) top left no-repeat;
   }
 }
