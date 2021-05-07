@@ -6,14 +6,15 @@ import { FiLink, FiInstagram, FiStar } from 'react-icons/fi'
 import { RiGitRepositoryCommitsLine } from 'react-icons/ri'
 import { TiFlowMerge } from 'react-icons/ti'
 import { VscGistSecret } from 'react-icons/vsc'
+import PageHead from '../components/PageHead'
 
 const Index = ({ repos, user }) => {
 
   return (
     <>
-      <Head>
-        <title>Erlon Gomes - Fullstack Developer</title>
-      </Head>
+      <PageHead />
+
+
 
       <div className="bg-body md:container md:mx-auto  ">
 
