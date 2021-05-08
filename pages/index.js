@@ -50,16 +50,16 @@ const Index = ({ repos, user }) => {
 
 
           </div>
-          <div className='border-dotted border-l border-light-blue-500 px-16 '>
-            <span className='text-lg normal-case font-bold mb-1'>Dev Pleno</span>
-            <p className='text-2x1 uppercase mb-1'>Fullstack Master</p>
-            <p>Curso Programação - Primeiros passos</p>
-            <p>Curso Webflow Basics</p>
-            <p> Curso DevReactJS Express</p>
-            <p>Curso Completo Socket.IO</p>
-            <p>Curso CI/CD</p>
-            <p>Curso AWS Express</p>
-            <p>ReactJs, NextJs, NestJs, MongoDB, TypeScript</p>
+          <div className='border-dotted border-l border-light-blue-500 px-16 mb-1 '>
+            <span className='text-2x1 text-lg normal-case font-bold mb-1'>Dev Pleno</span>
+            <p className='text-2x1 uppercase font-bold mb-1'>Fullstack Master</p>
+            <p className='mb-1'>Curso Programação - Primeiros passos</p>
+            <p className='mb-1'>Curso Webflow Basics</p>
+            <p className='mb-1'> Curso DevReactJS Express</p>
+            <p className='mb-1'>Curso Completo Socket.IO</p>
+            <p className='mb-1'>Curso CI/CD</p>
+            <p className='mb-1'>Curso AWS Express</p>
+            <p className='mb-1'>ReactJs, NextJs, NestJs, MongoDB, TypeScript</p>
           </div>
           <div className='border-dotted border-l border-light-blue-500 px-16 '>
             <span className='text-lg normal-case font-bold mb-1'>Celke</span>
