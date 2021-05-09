@@ -1,10 +1,7 @@
 import React from 'react'
-import getUser from '../utils/getUser'
 
 const Index = ({ repos, user }) => {
-
   return (
-
     <>
       <div className="md:container md:mx-auto px-4">
         <h1 className='text-5xl' >Erlon Carlos</h1>
@@ -25,15 +22,14 @@ const Index = ({ repos, user }) => {
 }
 export async function getServerSideProps(context) {
 
-  const { repos, user } = await getUser('erlonlon')
+  const request = await fetch(process.env.API_URL + '/api/getUser')
+  const { repos, user } = await request.json()
 
   return {
     props: {
-
       repos,
       user
     }
   }
 }
-
 export default Index
