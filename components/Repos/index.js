@@ -21,7 +21,7 @@ const Repos = ({ user, repos }) => {
         </p>
       </div>
 
-      <div className="md:grid md:grid-cols-3 gap-4">
+      <div className="md:grid md:grid-cols-3 gap-4 m-4">
 
         {repos.map(repo => {
           return (
