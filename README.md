@@ -2,7 +2,7 @@
 
 Este projeto é o código fonte do currículo de Erlon Gomes, disponível em: https://erlon.dev
 
-![Preview](https://github.com/erlonlon/erlon.dev/master/site.png?raw=true)
+![Preview](https://github.com/erlonlon/erlon-resume/blob/master/site.PNG?raw=true)
 
 
 
