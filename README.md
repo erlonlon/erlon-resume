@@ -35,9 +35,9 @@ Este projeto pode ser colocado em produção na Vercel (sem configurações extr
 
 ## Autor:
 
-* **ERlon Gomes** - *Initial work* - [LinkedIn](https://www.linkedin.com/in/erloncarlos/)
+* **Erlon Gomes** - *Initial work* - [LinkedIn](https://www.linkedin.com/in/erloncarlos/)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
 
 ## Licença
 
