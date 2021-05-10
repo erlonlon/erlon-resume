@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 body{
-  background: #fff url(/images/f9.png) top left no-repeat ;
+  background: #fff url(/images/f10.png) top left no-repeat ;
   
 }
 
@@ -12,6 +12,6 @@ body{
     background: url(/images/lonlon.png) top left no-repeat;
   }
   .bg-network-left{
-    background: url(/images/f9.png) top center no-repeat;
+    background: url(/images/10.png) top center no-repeat;
   }
 }
