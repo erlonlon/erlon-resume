@@ -11,7 +11,7 @@ const Index = ({ repos, user }) => {
   return (
     <>
       <PageHead />
-      <div className="bg-body md:container md:mx-auto  ">
+      <div className="md:container md:mx-auto  ">
         <Hero />
         <Competencias />
         <Formacao />
