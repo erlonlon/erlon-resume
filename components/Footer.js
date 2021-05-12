@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <div className='bg-black p-8'>
         <p className='text-white text-center'>
-          Todos direitos reservados - <a href='https://erlon.dev'>Erlon Gomes</a>
+          Todos direitos reservados 2021- <a href='https://erlon.dev'>Erlon Gomes</a>
         </p>
 
       </div>
