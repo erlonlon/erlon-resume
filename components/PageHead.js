@@ -6,7 +6,7 @@ const PageHead = () => {
 
     <>
       <Head>
-        <title>Erlon Gomes - Fullstack Developer</title>
+        <title>Erlon Gomes - Fullstack Developer.</title>
       </Head>
 
     </>
